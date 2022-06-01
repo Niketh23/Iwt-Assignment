@@ -1,0 +1,49 @@
+<html lang="en"><head><meta name="referrer" content="origin"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="favicon.ico">
+</head><body>
+You have to be logged in to vote.<br><br>
+<b>Login</b><br><br>
+<form name="contactForm" method="post" action="vote"><input type="hidden" name="goto" value="ask"><input type="hidden" name="how" value="up"><input type="hidden" name="id" value="31408431"><table border="0"><tr><td>username:</td><td><input type="text" name="acct" size="20" autocorrect="off" spellcheck="false" autocapitalize="off" autofocus="true"><div class="error" id="userErr"></div></td></tr><tr><td>password:</td><td><input type="password" name="pw" size="20"><div class="error" id="passErr"></div></td></tr></table><br>
+<input type="submit" value="login"></form><a href="forgot">Forgot your password?</a><br><br>
+<b>Create Account</b><br><br>
+<form method="post" action="vote"><input type="hidden" name="goto" value="ask"><input type="hidden" name="how" value="up"><input type="hidden" name="id" value="31408431"><input type="hidden" name="creating" value="t"><table border="0"><tr><td>username:</td><td><input type="text" name="acct" size="20" autocorrect="off" spellcheck="false" autocapitalize="off"></td></tr><tr><td>password:</td><td><input type="password" name="pw" size="20"></td></tr></table><br>
+<input type="submit" value="create account"></form> 
+<script>
+    var noReload = document.getElementById("contactForm");
+    noReload.addEventListener("submit", function(e){
+        e.preventDefault();
+        validation();
+    });
+    function printError(elemId, hintMsg) {
+        document.getElementById(elemId).innerHTML = hintMsg;
+    }
+    var userErr = passErr = true;
+    function validation() {
+        var email = document.contactForm.acct.value;
+        var pass = document.contactForm.pw.value;
+        if(email==""){
+            printError("userErr", "Please enter correct username");
+        } else {
+            // Regular expression for basic email validation
+            var regex = /^[a-zA-Z0-9+_.-][a-zA-Z0-9.-]+$/;
+            if (regex.test(email) === false) {
+                printError("userErr", "Please enter a valid username");
+            } else {
+                printError("userErr", "");
+                userErr = false;
+            }
+        }
+        if(pass==""){
+            printError("passErr", "Please enter correct password");
+        } else {
+            // Regular expression for password
+            var passw = /^[A-Za-z]\w{7,14}$/;
+            if (regex.test(email) === false) {
+                printError("userErr", "Please enter a valid username");
+            } else {
+                printError("userErr", "");
+                userErr = false;
+            }
+        }
+    }
+</script>
+</body></html>

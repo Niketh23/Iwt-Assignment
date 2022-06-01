@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apply to Y Combinator | Y Combinator</title>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta
+      name="csrf-token"
+      content="WHaS+hluH7iE6xRrCp2nM2ehd5tKj52YVzpkLJO8F6JIKAglLAiZfRKc2yvT4dUgBVAKGUlntut82ocq/0Ijug=="
+    />
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <script>
+      window.NREUM || (NREUM = {});
+      NREUM.info = {
+        beacon: "bam-cell.nr-data.net",
+        errorBeacon: "bam-cell.nr-data.net",
+        licenseKey: "f604a527b0",
+        applicationID: "97963418",
+        transactionName: "cg0NQhFeVVgAExdPW1UBPFgGRhZWBBJdGVlBEg9P",
+        queueTime: 0,
+        applicationTime: 15,
+        agent: "",
+      };
+    </script>
+    <script>
+      (window.NREUM || (NREUM = {})).init = {
+        ajax: { deny_list: ["bam-cell.nr-data.net"] },
+      };
+      (window.NREUM || (NREUM = {})).loader_config = {
+        licenseKey: "f604a527b0",
+        applicationID: "97963418",
+      };
+      window.NREUM || (NREUM = {}),
+        (__nr_require = (function (t, e, n) {
+          function r(n) {
+            if (!e[n]) {
+              var i = (e[n] = { exports: {} });
+              t[n][0].call(
+                i.exports,
+                function (e) {
+                  var i = t[n][1][e];
+                  return r(i || e);
+                },
+                i,
+                i.exports
+              );
+            }
+            return e[n].exports;
+          }
+          if ("function" == typeof __nr_require) return __nr_require;
+          for (var i = 0; i < n.length; i++) r(n[i]);
+          return r;
+        })(
+          {
+            1: [
+              function (t, e, n) {
+                function r() {}
+                function i(t, e, n, r) {
+                  return function () {
+                    return (
+                      s.recordSupportability("API/" + e + "/called"),
+                      o(
+                        t + e,
+                        [u.now()].concat(c(arguments)),
+                        n ? null : this,
+                        r
+                      ),
+                      n ? void 0 : this
+                    );
+                  };
+                }
+                var o = t("handle"),
+                  a = t(9),
+                  c = t(10),
+                  f = t("ee").get("tracer"),
+                  u = t("loader"),
+                  s = t(4),
+                  d = NREUM;
+                "undefined" == typeof window.newrelic && (newrelic = d);
+                var p = [
+                    "setPageViewName",
+                    "setCustomAttribute",
+                    "setErrorHandler",
+                    "finished",
+                    "addToTrace",
+                    "inlineHit",
+                    "addRelease",
+                  ],
+                  l = "api-",
+                  v = l + "ixn-";
+                a(p, function (t, e) {
+                  d[e] = i(l, e, !0, "api");
+                }),
+                  (d.addPageAction = i(l, "addPageAction", !0)),
+                  (d.setCurrentRouteName = i(l, "routeName", !0)),
+                  (e.exports = newrelic),
+                  (d.interaction = function () {
+                    return new r().get();
+                  });
+                var m = (r.prototype = {
+                  createTracer: function (t, e) {
+                    var n = {},
+                      r = this,
+                      i = "function" == typeof e;
+                    return (
+                      o(v + "tracer", [u.now(), t, n], r),
+                      function () {
+                        if (
+                          (f.emit(
+                            (i ? "" : "no-") + "fn-start",
+                            [u.now(), r, i],
+                            n
+                          ),
+                          i)
+                        )
+                          try {
+                            return e.apply(this, arguments);
+                          } catch (t) {
+                            throw (
+                              (f.emit("fn-err", [arguments, this, t], n), t)
+                            );
+                          } finally {
+                            f.emit("fn-end", [u.now()], n);
+                          }
+                      }
+                    );
+                  },
+                });
+                a(
+                  "actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(
+                    ","
+                  ),
+                  function (t, e) {
+                    m[e] = i(v, e);
+                  }
+                ),
+                  (newrelic.noticeError = function (t, e) {
+                    "string" == typeof t && (t = new Error(t)),
+                      s.recordSupportability("API/noticeError/called"),
+                      o("err", [t, u.now(), !1, e]);
+                  });
+              },
+              {},
+            ],
+            2: [
+              function (t, e, n) {
+                function r(t) {
+                  if (NREUM.init) {
+                    for (
+                      var e = NREUM.init, n = t.split("."), r = 0;
+                      r < n.length - 1;
+                      r++
+                    )
+                      if (((e = e[n[r]]), "object" != typeof e)) return;
+                    return (e = e[n[n.length - 1]]);
+                  }
+                }
+                e.exports = { getConfiguration: r };
+              },
+              {},
+            ],
+            3: [
+              function (t, e, n) {
+                var r = !1;
+                try {
+                  var i = Object.defineProperty({}, "passive", {
+                    get: function () {
+                      r = !0;
+                    },
+                  });
+                  window.addEventListener("testPassive", null, i),
+                    window.removeEventListener("testPassive", null, i);
+                } catch (o) {}
+                e.exports = function (t) {
+                  return r ? { passive: !0, capture: !!t } : !!t;
+                };
+              },
+              {},
+            ],
+            4: [
+              function (t, e, n) {
+                function r(t, e) {
+                  var n = [a, t, { name: t }, e];
+                  return o("storeMetric", n, null, "api"), n;
+                }
+                function i(t, e) {
+                  var n = [c, t, { name: t }, e];
+                  return o("storeEventMetrics", n, null, "api"), n;
+                }
+                var o = t("handle"),
+                  a = "sm",
+                  c = "cm";
+                e.exports = {
+                  constants: { SUPPORTABILITY_METRIC: a, CUSTOM_METRIC: c },
+                  recordSupportability: r,
+                  recordCustom: i,
+                };
+              },
+              {},
+            ],
+            5: [
+              function (t, e, n) {
+                function r() {
+                  return c.exists && performance.now
+                    ? Math.round(performance.now())
+                    : (o = Math.max(new Date().getTime(), o)) - a;
+                }
+                function i() {
+                  return o;
+                }
+                var o = new Date().getTime(),
+                  a = o,
+                  c = t(11);
+                (e.exports = r),
+                  (e.exports.offset = a),
+                  (e.exports.getLastTimestamp = i);
+              },
+              {},
+            ],
+            6: [
+              function (t, e, n) {
+                function r(t, e) {
+                  var n = t.getEntries();
+                  n.forEach(function (t) {
+                    "first-paint" === t.name
+                      ? l("timing", ["fp", Math.floor(t.startTime)])
+                      : "first-contentful-paint" === t.name &&
+                        l("timing", ["fcp", Math.floor(t.startTime)]);
+                  });
+                }
+                function i(t, e) {
+                  var n = t.getEntries();
+                  if (n.length > 0) {
+                    var r = n[n.length - 1];
+                    if (u && u < r.startTime) return;
+                    var i = [r],
+                      o = a({});
+                    o && i.push(o), l("lcp", i);
+                  }
+                }
+                function o(t) {
+                  t.getEntries().forEach(function (t) {
+                    t.hadRecentInput || l("cls", [t]);
+                  });
+                }
+                function a(t) {
+                  var e =
+                    navigator.connection ||
+                    navigator.mozConnection ||
+                    navigator.webkitConnection;
+                  if (e)
+                    return (
+                      e.type && (t["net-type"] = e.type),
+                      e.effectiveType && (t["net-etype"] = e.effectiveType),
+                      e.rtt && (t["net-rtt"] = e.rtt),
+                      e.downlink && (t["net-dlink"] = e.downlink),
+                      t
+                    );
+                }
+                function c(t) {
+                  if (t instanceof y && !w) {
+                    var e = Math.round(t.timeStamp),
+                      n = { type: t.type };
+                    a(n),
+                      e <= v.now()
+                        ? (n.fid = v.now() - e)
+                        : e > v.offset && e <= Date.now()
+                        ? ((e -= v.offset), (n.fid = v.now() - e))
+                        : (e = v.now()),
+                      (w = !0),
+                      l("timing", ["fi", e, n]);
+                  }
+                }
+                function f(t) {
+                  "hidden" === t && ((u = v.now()), l("pageHide", [u]));
+                }
+                if (
+                  !(
+                    "init" in NREUM &&
+                    "page_view_timing" in NREUM.init &&
+                    "enabled" in NREUM.init.page_view_timing &&
+                    NREUM.init.page_view_timing.enabled === !1
+                  )
+                ) {
+                  var u,
+                    s,
+                    d,
+                    p,
+                    l = t("handle"),
+                    v = t("loader"),
+                    m = t(8),
+                    g = t(3),
+                    y = NREUM.o.EV;
+                  if (
+                    "PerformanceObserver" in window &&
+                    "function" == typeof window.PerformanceObserver
+                  ) {
+                    s = new PerformanceObserver(r);
+                    try {
+                      s.observe({ entryTypes: ["paint"] });
+                    } catch (h) {}
+                    d = new PerformanceObserver(i);
+                    try {
+                      d.observe({ entryTypes: ["largest-contentful-paint"] });
+                    } catch (h) {}
+                    p = new PerformanceObserver(o);
+                    try {
+                      p.observe({ type: "layout-shift", buffered: !0 });
+                    } catch (h) {}
+                  }
+                  if ("addEventListener" in document) {
+                    var w = !1,
+                      b = [
+                        "click",
+                        "keydown",
+                        "mousedown",
+                        "pointerdown",
+                        "touchstart",
+                      ];
+                    b.forEach(function (t) {
+                      document.addEventListener(t, c, g(!1));
+                    });
+                  }
+                  m(f);
+                }
+              },
+              {},
+            ],
+            7: [
+              function (t, e, n) {
+                function r(t, e) {
+                  if (!i) return !1;
+                  if (t !== i) return !1;
+                  if (!e) return !0;
+                  if (!o) return !1;
+                  for (
+                    var n = o.split("."), r = e.split("."), a = 0;
+                    a < r.length;
+                    a++
+                  )
+                    if (r[a] !== n[a]) return !1;
+                  return !0;
+                }
+                var i = null,
+                  o = null,
+                  a = /Version\/(\S+)\s+Safari/;
+                if (navigator.userAgent) {
+                  var c = navigator.userAgent,
+                    f = c.match(a);
+                  f &&
+                    c.indexOf("Chrome") === -1 &&
+                    c.indexOf("Chromium") === -1 &&
+                    ((i = "Safari"), (o = f[1]));
+                }
+                e.exports = { agent: i, version: o, match: r };
+              },
+              {},
+            ],
+            8: [
+              function (t, e, n) {
+                function r(t) {
+                  function e() {
+                    t(
+                      c && document[c]
+                        ? document[c]
+                        : document[o]
+                        ? "hidden"
+                        : "visible"
+                    );
+                  }
+                  "addEventListener" in document &&
+                    a &&
+                    document.addEventListener(a, e, i(!1));
+                }
+                var i = t(3);
+                e.exports = r;
+                var o, a, c;
+                "undefined" != typeof document.hidden
+                  ? ((o = "hidden"),
+                    (a = "visibilitychange"),
+                    (c = "visibilityState"))
+                  : "undefined" != typeof document.msHidden
+                  ? ((o = "msHidden"), (a = "msvisibilitychange"))
+                  : "undefined" != typeof document.webkitHidden &&
+                    ((o = "webkitHidden"),
+                    (a = "webkitvisibilitychange"),
+                    (c = "webkitVisibilityState"));
+              },
+              {},
+            ],
+            9: [
+              function (t, e, n) {
+                function r(t, e) {
+                  var n = [],
+                    r = "",
+                    o = 0;
+                  for (r in t) i.call(t, r) && ((n[o] = e(r, t[r])), (o += 1));
+                  return n;
+                }
+                var i = Object.prototype.hasOwnProperty;
+                e.exports = r;
+              },
+              {},
+            ],
+            10: [
+              function (t, e, n) {
+                function r(t, e, n) {
+                  e || (e = 0),
+                    "undefined" == typeof n && (n = t ? t.length : 0);
+                  for (
+                    var r = -1, i = n - e || 0, o = Array(i < 0 ? 0 : i);
+                    ++r < i;
+
+                  )
+                    o[r] = t[e + r];
+                  return o;
+                }
+                e.exports = r;
+              },
+              {},
+            ],
+            11: [
+              function (t, e, n) {
+                e.exports = {
+                  exists:
+                    "undefined" != typeof window.performance &&
+                    window.performance.timing &&
+                    "undefined" !=
+                      typeof window.performance.timing.navigationStart,
+                };
+              },
+              {},
+            ],
+            ee: [
+              function (t, e, n) {
+                function r() {}
+                function i(t) {
+                  function e(t) {
+                    return t && t instanceof r ? t : t ? u(t, f, a) : a();
+                  }
+                  function n(n, r, i, o, a) {
+                    if ((a !== !1 && (a = !0), !l.aborted || o)) {
+                      t && a && t(n, r, i);
+                      for (
+                        var c = e(i), f = m(n), u = f.length, s = 0;
+                        s < u;
+                        s++
+                      )
+                        f[s].apply(c, r);
+                      var p = d[w[n]];
+                      return p && p.push([b, n, r, c]), c;
+                    }
+                  }
+                  function o(t, e) {
+                    h[t] = m(t).concat(e);
+                  }
+                  function v(t, e) {
+                    var n = h[t];
+                    if (n)
+                      for (var r = 0; r < n.length; r++)
+                        n[r] === e && n.splice(r, 1);
+                  }
+                  function m(t) {
+                    return h[t] || [];
+                  }
+                  function g(t) {
+                    return (p[t] = p[t] || i(n));
+                  }
+                  function y(t, e) {
+                    l.aborted ||
+                      s(t, function (t, n) {
+                        (e = e || "feature"), (w[n] = e), e in d || (d[e] = []);
+                      });
+                  }
+                  var h = {},
+                    w = {},
+                    b = {
+                      on: o,
+                      addEventListener: o,
+                      removeEventListener: v,
+                      emit: n,
+                      get: g,
+                      listeners: m,
+                      context: e,
+                      buffer: y,
+                      abort: c,
+                      aborted: !1,
+                    };
+                  return b;
+                }
+                function o(t) {
+                  return u(t, f, a);
+                }
+                function a() {
+                  return new r();
+                }
+                function c() {
+                  (d.api || d.feature) &&
+                    ((l.aborted = !0), (d = l.backlog = {}));
+                }
+                var f = "nr@context",
+                  u = t("gos"),
+                  s = t(9),
+                  d = {},
+                  p = {},
+                  l = (e.exports = i());
+                (e.exports.getOrSetContext = o), (l.backlog = d);
+              },
+              {},
+            ],
+            gos: [
+              function (t, e, n) {
+                function r(t, e, n) {
+                  if (i.call(t, e)) return t[e];
+                  var r = n();
+                  if (Object.defineProperty && Object.keys)
+                    try {
+                      return (
+                        Object.defineProperty(t, e, {
+                          value: r,
+                          writable: !0,
+                          enumerable: !1,
+                        }),
+                        r
+                      );
+                    } catch (o) {}
+                  return (t[e] = r), r;
+                }
+                var i = Object.prototype.hasOwnProperty;
+                e.exports = r;
+              },
+              {},
+            ],
+            handle: [
+              function (t, e, n) {
+                function r(t, e, n, r) {
+                  i.buffer([t], r), i.emit(t, e, n);
+                }
+                var i = t("ee").get("handle");
+                (e.exports = r), (r.ee = i);
+              },
+              {},
+            ],
+            id: [
+              function (t, e, n) {
+                function r(t) {
+                  var e = typeof t;
+                  return !t || ("object" !== e && "function" !== e)
+                    ? -1
+                    : t === window
+                    ? 0
+                    : a(t, o, function () {
+                        return i++;
+                      });
+                }
+                var i = 1,
+                  o = "nr@id",
+                  a = t("gos");
+                e.exports = r;
+              },
+              {},
+            ],
+            loader: [
+              function (t, e, n) {
+                function r() {
+                  if (!M++) {
+                    var t = (T.info = NREUM.info),
+                      e = m.getElementsByTagName("script")[0];
+                    if (
+                      (setTimeout(u.abort, 3e4),
+                      !(t && t.licenseKey && t.applicationID && e))
+                    )
+                      return u.abort();
+                    f(x, function (e, n) {
+                      t[e] || (t[e] = n);
+                    });
+                    var n = a();
+                    c("mark", ["onload", n + T.offset], null, "api"),
+                      c("timing", ["load", n]);
+                    var r = m.createElement("script");
+                    0 === t.agent.indexOf("http://") ||
+                    0 === t.agent.indexOf("https://")
+                      ? (r.src = t.agent)
+                      : (r.src = l + "://" + t.agent),
+                      e.parentNode.insertBefore(r, e);
+                  }
+                }
+                function i() {
+                  "complete" === m.readyState && o();
+                }
+                function o() {
+                  c("mark", ["domContent", a() + T.offset], null, "api");
+                }
+                var a = t(5),
+                  c = t("handle"),
+                  f = t(9),
+                  u = t("ee"),
+                  s = t(7),
+                  d = t(2),
+                  p = t(3),
+                  l = d.getConfiguration("ssl") === !1 ? "http" : "https",
+                  v = window,
+                  m = v.document,
+                  g = "addEventListener",
+                  y = "attachEvent",
+                  h = v.XMLHttpRequest,
+                  w = h && h.prototype,
+                  b = !1;
+                NREUM.o = {
+                  ST: setTimeout,
+                  SI: v.setImmediate,
+                  CT: clearTimeout,
+                  XHR: h,
+                  REQ: v.Request,
+                  EV: v.Event,
+                  PR: v.Promise,
+                  MO: v.MutationObserver,
+                };
+                var E = "" + location,
+                  x = {
+                    beacon: "bam.nr-data.net",
+                    errorBeacon: "bam.nr-data.net",
+                    agent: "js-agent.newrelic.com/nr-1216.min.js",
+                  },
+                  O = h && w && w[g] && !/CriOS/.test(navigator.userAgent),
+                  T = (e.exports = {
+                    offset: a.getLastTimestamp(),
+                    now: a,
+                    origin: E,
+                    features: {},
+                    xhrWrappable: O,
+                    userAgent: s,
+                    disabled: b,
+                  });
+                if (!b) {
+                  t(1),
+                    t(6),
+                    m[g]
+                      ? (m[g]("DOMContentLoaded", o, p(!1)),
+                        v[g]("load", r, p(!1)))
+                      : (m[y]("onreadystatechange", i), v[y]("onload", r)),
+                    c("mark", ["firstbyte", a.getLastTimestamp()], null, "api");
+                  var M = 0;
+                }
+              },
+              {},
+            ],
+            "wrap-function": [
+              function (t, e, n) {
+                function r(t, e) {
+                  function n(e, n, r, f, u) {
+                    function nrWrapper() {
+                      var o, a, s, p;
+                      try {
+                        (a = this),
+                          (o = d(arguments)),
+                          (s = "function" == typeof r ? r(o, a) : r || {});
+                      } catch (l) {
+                        i([l, "", [o, a, f], s], t);
+                      }
+                      c(n + "start", [o, a, f], s, u);
+                      try {
+                        return (p = e.apply(a, o));
+                      } catch (v) {
+                        throw (c(n + "err", [o, a, v], s, u), v);
+                      } finally {
+                        c(n + "end", [o, a, p], s, u);
+                      }
+                    }
+                    return a(e)
+                      ? e
+                      : (n || (n = ""),
+                        (nrWrapper[p] = e),
+                        o(e, nrWrapper, t),
+                        nrWrapper);
+                  }
+                  function r(t, e, r, i, o) {
+                    r || (r = "");
+                    var c,
+                      f,
+                      u,
+                      s = "-" === r.charAt(0);
+                    for (u = 0; u < e.length; u++)
+                      (f = e[u]),
+                        (c = t[f]),
+                        a(c) || (t[f] = n(c, s ? f + r : r, i, f, o));
+                  }
+                  function c(n, r, o, a) {
+                    if (!v || e) {
+                      var c = v;
+                      v = !0;
+                      try {
+                        t.emit(n, r, o, e, a);
+                      } catch (f) {
+                        i([f, n, r, o], t);
+                      }
+                      v = c;
+                    }
+                  }
+                  return t || (t = s), (n.inPlace = r), (n.flag = p), n;
+                }
+                function i(t, e) {
+                  e || (e = s);
+                  try {
+                    e.emit("internal-error", t);
+                  } catch (n) {}
+                }
+                function o(t, e, n) {
+                  if (Object.defineProperty && Object.keys)
+                    try {
+                      var r = Object.keys(t);
+                      return (
+                        r.forEach(function (n) {
+                          Object.defineProperty(e, n, {
+                            get: function () {
+                              return t[n];
+                            },
+                            set: function (e) {
+                              return (t[n] = e), e;
+                            },
+                          });
+                        }),
+                        e
+                      );
+                    } catch (o) {
+                      i([o], n);
+                    }
+                  for (var a in t) l.call(t, a) && (e[a] = t[a]);
+                  return e;
+                }
+                function a(t) {
+                  return !(t && t instanceof Function && t.apply && !t[p]);
+                }
+                function c(t, e) {
+                  var n = e(t);
+                  return (n[p] = t), o(t, n, s), n;
+                }
+                function f(t, e, n) {
+                  var r = t[e];
+                  t[e] = c(r, n);
+                }
+                function u() {
+                  for (
+                    var t = arguments.length, e = new Array(t), n = 0;
+                    n < t;
+                    ++n
+                  )
+                    e[n] = arguments[n];
+                  return e;
+                }
+                var s = t("ee"),
+                  d = t(10),
+                  p = "nr@original",
+                  l = Object.prototype.hasOwnProperty,
+                  v = !1;
+                (e.exports = r),
+                  (e.exports.wrapFunction = c),
+                  (e.exports.wrapInPlace = f),
+                  (e.exports.argsToArray = u);
+              },
+              {},
+            ],
+          },
+          {},
+          ["loader"]
+        ));
+    </script>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-51714649-1", "auto");
+      ga("require", "linkid", "linkid.js");
+      ga("send", "pageview");
+    </script>
+    <script>
+      (function (e, t) {
+        var n = e.amplitude || { _q: [], _iq: {} };
+        var r = t.createElement("script");
+        r.type = "text/javascript";
+        r.integrity =
+          "sha384-9jIJQlEp6cEk6foaEO/N5yzaJmQbTtugbpg9l8P/javk55WlPh7fJGR1vHhyDjON";
+        r.crossOrigin = "anonymous";
+        r.async = true;
+        r.src = "https://cdn.amplitude.com/libs/amplitude-8.4.0-min.gz.js";
+        r.onload = function () {
+          if (!e.amplitude.runQueuedFunctions) {
+            console.log("[Amplitude] Error: could not load SDK");
+          }
+        };
+        var i = t.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(r, i);
+        function s(e, t) {
+          e.prototype[t] = function () {
+            this._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+            return this;
+          };
+        }
+        var o = function () {
+          this._q = [];
+          return this;
+        };
+        var a = [
+          "add",
+          "append",
+          "clearAll",
+          "prepend",
+          "set",
+          "setOnce",
+          "unset",
+          "preInsert",
+          "postInsert",
+          "remove",
+        ];
+        for (var c = 0; c < a.length; c++) {
+          s(o, a[c]);
+        }
+        n.Identify = o;
+        var u = function () {
+          this._q = [];
+          return this;
+        };
+        var l = [
+          "setProductId",
+          "setQuantity",
+          "setPrice",
+          "setRevenueType",
+          "setEventProperties",
+        ];
+        for (var p = 0; p < l.length; p++) {
+          s(u, l[p]);
+        }
+        n.Revenue = u;
+        var d = [
+          "init",
+          "logEvent",
+          "logRevenue",
+          "setUserId",
+          "setUserProperties",
+          "setOptOut",
+          "setVersionName",
+          "setDomain",
+          "setDeviceId",
+          "enableTracking",
+          "setGlobalUserProperties",
+          "identify",
+          "clearUserProperties",
+          "setGroup",
+          "logRevenueV2",
+          "regenerateDeviceId",
+          "groupIdentify",
+          "onInit",
+          "logEventWithTimestamp",
+          "logEventWithGroups",
+          "setSessionId",
+          "resetSessionId",
+        ];
+        function v(e) {
+          function t(t) {
+            e[t] = function () {
+              e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          }
+          for (var n = 0; n < d.length; n++) {
+            t(d[n]);
+          }
+        }
+        v(n);
+        n.getInstance = function (e) {
+          e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase();
+          if (!Object.prototype.hasOwnProperty.call(n._iq, e)) {
+            n._iq[e] = { _q: [] };
+            v(n._iq[e]);
+          }
+          return n._iq[e];
+        };
+        e.amplitude = n;
+      })(window, document);
+      function isAmplitudeLoaded() {
+        return !!window.amplitude.runQueuedFunctions;
+      }
+
+      function parseUrl(url) {
+        var a = document.createElement("a");
+        a.href = url;
+        return {
+          href: a.href,
+          host: a.host || location.host,
+          port: "0" === a.port || "" === a.port ? port(a.protocol) : a.port,
+          hash: a.hash,
+          hostname: a.hostname || location.hostname,
+          pathname: a.pathname.charAt(0) != "/" ? "/" + a.pathname : a.pathname,
+          protocol:
+            !a.protocol || ":" == a.protocol ? location.protocol : a.protocol,
+          search: a.search,
+          query: a.search.slice(1),
+        };
+      }
+
+      function canonical() {
+        var tags = document.getElementsByTagName("link");
+        for (var i = 0, tag; (tag = tags[i]); i++) {
+          if (tag.getAttribute("rel") === "canonical") {
+            return tag.getAttribute("href");
+          }
+        }
+      }
+
+      function canonicalPath() {
+        var canon = canonical();
+        if (!canon) return window.location.pathname;
+        return parseUrl(canon).pathname;
+      }
+
+      function canonicalUrl(search) {
+        var canon = canonical();
+        if (canon) return canon.indexOf("?") !== -1 ? canon : canon + search;
+        var url = window.location.href;
+        var i = url.indexOf("#");
+        return i === -1 ? url : url.slice(0, i);
+      }
+
+      function outboundClick(e, eventName) {
+        if (!isAmplitudeLoaded()) {
+          return;
+        }
+        amplitude.getInstance().logEvent(eventName, null, function () {
+          window.location = e.target.href;
+        });
+        return false;
+      }
+
+      function createProfileClick(e) {
+        return outboundClick(e, "Create Profile Clicked");
+      }
+
+      function joinNetworkClick(e) {
+        return outboundClick(e, "Join Network Clicked");
+      }
+
+      function applyNowClick(e) {
+        return outboundClick(e, "Apply Now Clicked");
+      }
+
+      amplitude
+        .getInstance()
+        .init(
+          "dd1bb83142f9330da675b495ef578258",
+          null,
+          { includeReferrer: true, includeUtm: true, includeGclid: true },
+          function () {
+            amplitude.getInstance().logEvent("Loaded a Page", {
+              path: canonicalPath(),
+              referrer: document.referrer,
+              search: location.search,
+              title: document.title,
+              url: canonicalUrl(location.search),
+            });
+          }
+        );
+    </script>
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="@ycombinator" name="twitter:site" />
+    <meta
+      content="https://www.ycombinator.com/assets/ycdc/yc-og-image-0cfa80cac837d64d9b4f0705950000b66906ac032791376bd721f246fafcc7b4.png"
+      name="twitter:image"
+    />
+    <meta
+      content="initial-scale=1, width=device-width, height=device-height"
+      name="viewport"
+    />
+    <meta content="follow" name="robots" />
+    <meta content="website" property="og:type" />
+    <meta content="en_US" property="og:locale" />
+    <meta content="Y Combinator" property="og:site_name" />
+    <meta content="Apply to Y Combinator | Y Combinator" property="og:title" />
+    <meta content="https://www.ycombinator.com/apply" property="og:url" />
+    <meta
+      content="To apply for the Y Combinator program, submit an application form. We accept companies twice a year in two batches. The program includes dinners every Tuesday, office hours with YC partners and access to the network of other YC founders. The program culminates in Demo Day, where startups pitch to a carefully selected audience of investors."
+      property="og:description"
+    />
+    <meta
+      content="23YLYcfP-tmEiWdemh9h6Wi6DIxisMtUtcowUJBSvH0"
+      property="google-site-verification"
+    />
+    <meta
+      content="https://www.ycombinator.com/assets/ycdc/yc-og-image-0cfa80cac837d64d9b4f0705950000b66906ac032791376bd721f246fafcc7b4.png"
+      property="og:image"
+    />
+    <meta
+      content="https://www.ycombinator.com/assets/ycdc/yc-og-image-0cfa80cac837d64d9b4f0705950000b66906ac032791376bd721f246fafcc7b4.png"
+      property="og:image:url"
+    />
+    <meta
+      content="https://www.ycombinator.com/assets/ycdc/yc-og-image-0cfa80cac837d64d9b4f0705950000b66906ac032791376bd721f246fafcc7b4.png"
+      property="og:image:secure_url"
+    />
+    <link
+      href="/assets/ycdc/favicon-c8a914eeeba9fe6f7a863b35608b55aeedd7c1ff409c97b9ecb96b7a6c278d70.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="/assets/ycdc/favicon-c8a914eeeba9fe6f7a863b35608b55aeedd7c1ff409c97b9ecb96b7a6c278d70.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://www.ycombinator.com/blog/feed"
+      rel="alternate"
+      type="application/rss+xml"
+    />
+    <link
+      href="https://plus.google.com/113116812547402050884"
+      rel="publisher"
+    />
+    <script>
+      window.AlgoliaOpts = { indices_not_set: true };
+      window.RAILS_ENV = "production";
+    </script>
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="/packs/css/20-59e998f9.chunk.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="/packs/css/50-6bd41a48.chunk.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="/packs/css/ycdc-new-509ce208.chunk.css"
+    />
+    <script
+      src="/packs/js/runtime~ycdc-new-2709dde47eab3fcea767.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/0-3a0b3a46783a8d7f0fbc.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/2-77d87b01c54e03bb416b.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/1-261f747a76d6109c0a28.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/4-05d2ba95041b1f3b77d0.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/3-99b8c176cb95efdea456.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/5-a702d5b0bd5611bd7e97.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/6-53ca7a0b373d12f75db5.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/7-b83f541558b40a315632.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/8-706b3cd6cac29ce95cca.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/12-dc2d983d9b739216b75f.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/10-bb2309c14dc8afc83460.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/14-cd798bbda2258b8829bc.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/19-ffd5576dfb4346b9a6d1.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/15-0532ed431f4e46afaf4c.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/20-9b9301683dbff051762d.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/25-0de68d779cc840aaf429.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/50-ab0cd05603beeed1cf04.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/packs/js/ycdc-new-2115040678ae02b61c20.chunk.js"
+      defer="defer"
+    ></script>
+    <script
+      src="/assets/blog-1b1630d93b9eae03ab385c5640abad7b5727b15f82561115b1242d492597f041.js"
+      defer="defer"
+    ></script>
+  </head>
+  <body class="retro ycdc2 base apply">
+      <div class="mx-auto max-w-ycdc-page">
+        <section
+          class="relative isolate z-0 sm:pr-[13px] border-retro-sectionBorder ycdcPlus:pr-0 border-b pt-6 lg:pt-9 pb-6 lg:pb-9"
+        >
+          <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+            <div class="relative lg:col-span-8">
+              <h1 class="ycdc-page-title sm:mb-2">Apply to Y Combinator</h1>
+              <div class="ycdc-page-updated">
+                Summer 2022<!-- -->
+                Batch
+              </div>
+            </div>
+            <div
+              class="relative mt-4 md:mt-8 mx-2 sm:mx-auto lg:mx-0 lg:mt-0 lg:col-span-4 lg:self-start"
+            >
+              <div class="text-center">
+            
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="relative isolate z-0 sm:pr-[13px] border-retro-sectionBorder ycdcPlus:pr-0 border-b pt-6 lg:pt-9 pb-6 lg:pb-9"
+        >
+          <div class="ycdc-toc-container">
+            <div class="prose prose-sm sm:prose-base">
+              <p class="lead max-w-xl">
+                Y Combinator is accepting applications from startups for the<!-- -->
+                <strong>Summer 2022</strong> funding cycle. It will take place
+                from<!-- -->
+                <strong>June–August 2022</strong>.
+              </p>
+              <p class="italic">
+                <strong
+                  >The batch will be remote with optional in-person components
+                  depending on the pandemic.</strong
+                >
+              </p>
+              <ol>
+                <li>
+                  If you want to apply, please submit your<!-- -->
+                  <a href="https://apply.ycombinator.com/" target="_blank"
+                    >application</a
+                  >
+                  online<!-- -->
+                  <strong>as soon as possible</strong>. While the deadline for
+                  on-time applications was
+                  <!-- -->March 24<!-- -->, we continue to accept applications
+                  until the batch starts in<!-- -->
+                  <!-- -->June<!-- -->. We will review all late applications,
+                  but if you apply late we may not get back to you with a
+                  decision until the batch starts.
+                </li>
+                <li>
+                  <strong id="minimumEquity"
+                    >You must have at least 10% equity in the startup to be
+                    considered a founder by Y Combinator.</strong
+                  >
+                  <!-- -->Only founders can come to interviews if invited or
+                  attend batch events if accepted.
+                </li>
+                <li>
+                  We will be inviting teams to talk to us on a rolling basis.<!-- -->
+                  <strong>May 19</strong> is the latest day you&#x27;ll know by
+                  if you applied by the deadline.
+                </li>
+                <li>
+                  Interviews will be held either
+                  <strong
+                    >in
+                    <!-- -->April, May, or early June</strong
+                  >.
+                </li>
+                <li>
+                  This batch of Y Combinator will be remote due to COVID-19. It
+                  will be the same as every other batch, except that everything
+                  - office hours, batch events, Demo Day - is remote. We&#x27;ve
+                  worked hard to ensure we can provide the same or better
+                  networking, advice, and fundraising help that we always do.
+                  For more information on this, please read our
+                  <a href="/faq#covid">FAQs</a>.
+                </li>
+                <li>
+                  During the 3 month cycle we invite speakers every week to talk
+                  about their startup and what they learned.
+                </li>
+                <li>
+                  Every week or two, you&#x27;ll have group office hours, where
+                  you&#x27;ll talk with 5-8 companies and your YC partners for
+                  an hour. These group office hours are a chance to get to know
+                  companies in your batch that are going through similar things
+                  and to help each other.
+                </li>
+                <li>
+                  During and after the 3 months we introduce startups
+                  individually to people who could help them. The<!-- -->
+                  <a href="/about#alumni"
+                    >founders of other YC-funded companies</a
+                  >
+                  <!-- -->tend to be especially helpful. Today the YC alumni
+                  network is probably the most powerful network in the startup
+                  world.
+                </li>
+                <li>
+                  About 11 weeks in, we organize an event called<!-- -->
+                  <a href="/about#demoday">Demo Day</a> at which the startups
+                  present to a carefully selected, invite-only audience.
+                </li>
+                <li>
+                  <strong>YC doesn&#x27;t really end after 3 months</strong>;
+                  only the talks do. We continue to give advice and make
+                  introductions as long as our startups need — and so does the
+                  informal network of YC-funded companies.
+                </li>
+              </ol>
+            </div>
+            <nav class="hidden md:block self-start sticky top-4 bg-white p-6">
+              <div class="space-y-4">
+                <ol>
+                  <li>
+                    <a class="text-base text-[#999]">Related</a>
+                    <ul class="mt-1 space-y-0.5 text-[#555] list-disc">
+                      <li class="ml-5">
+                        <a
+                          class="block rounded font-bold text-sm py-0.5 pl-1.5 text-linkColor hover:bg-blue-100"
+                          href="/about"
+                          target="_blank"
+                          >About Y Combinator</a
+                        >
+                      </li>
+                      <li class="ml-5">
+                        <a
+                          class="block rounded font-bold text-sm py-0.5 pl-1.5 text-linkColor hover:bg-blue-100"
+                          href="/ethics"
+                          target="_blank"
+                          >Founder Ethics</a
+                        >
+                      </li>
+                      <li class="ml-5">
+                        <a
+                          class="block rounded font-bold text-sm py-0.5 pl-1.5 text-linkColor hover:bg-blue-100"
+                          href="/faq"
+                          target="_blank"
+                          >Frequently Asked Questions</a
+                        >
+                      </li>
+                      <li class="ml-5">
+                        <a
+                          class="block rounded font-bold text-sm py-0.5 pl-1.5 text-linkColor hover:bg-blue-100"
+                          href="/rfs"
+                          target="_blank"
+                          >Requests for Startups</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </nav>
+          </div>
+          <div class="my-8 lg:my-12">
+            <a
+              href="https://apply.ycombinator.com/"
+              class="ycdc-btn ycdc-btn-lg"
+              >Apply to
+              <!-- -->Summer 2022</a
+            >
+          </div>
+        </section>
+      </div>
+      <footer aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="max-w-ycdc-page mx-auto py-12 lg:py-16">
+          <div class="flex flex-col space-y-8 md:flex-row md:space-y-0">
+            <div class="md:pr-16">
+              <a
+                class="block h-[45px] w-[45px] sm:h-[60px] sm:w-[60px]"
+                href="/"
+                title="Y Combinator"
+                ><span class="sr-only">Y Combinator</span
+                ><img
+                  src="/packs/media/images/ycdc/ycombinator-logo-ee6c80faf1d1ce2491d80228063a9d88.png"
+                  class="w-full h-full"
+                  alt="Y Combinator"
+                  width="60"
+                  height="60"
+              /></a>
+            </div>
+            <div
+              class="flex flex-col sm:flex-row md:justify-items-center space-y-8 sm:space-y-0 sm:space-x-16"
+            >
+              <div>
+                <h3 class="font-semibold tracking-wider">Programs</h3>
+                <ul class="mt-2 space-y-1">
+                  <li>
+                    <a href="/about" class="font-light text-sm">YC Program</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://startupschool.org"
+                      class="font-light text-sm"
+                      >Startup School</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/jobs" class="font-light text-sm"
+                      >Work at a Startup</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/continuity" class="font-light text-sm"
+                      >Continuity</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold tracking-wider">Company</h3>
+                <ul class="mt-2 space-y-1">
+                  <li>
+                    <a href="/blog" class="font-light text-sm">YC Blog</a>
+                  </li>
+                  <li>
+                    <a href="/contact" class="font-light text-sm">Contact</a>
+                  </li>
+                  <li><a href="/press" class="font-light text-sm">Press</a></li>
+                  <li>
+                    <a href="/people" class="font-light text-sm">People</a>
+                  </li>
+                  <li>
+                    <a href="/careers" class="font-light text-sm">Careers</a>
+                  </li>
+                  <li><a href="/legal" class="font-light text-sm">Legal</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold tracking-wider">Resources</h3>
+                <ul class="mt-2 space-y-1">
+                  <li>
+                    <a href="/companies" class="font-light text-sm"
+                      >Startup Directory</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/library" class="font-light text-sm"
+                      >Startup Library</a
+                    >
+                  </li>
+                  <li><a href="/covid" class="font-light text-sm">Covid</a></li>
+                  <li>
+                    <a href="/investors" class="font-light text-sm"
+                      >Investors</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/documents" class="font-light text-sm">SAFE</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://news.ycombinator.com/"
+                      class="font-light text-sm"
+                      >Hacker News</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-8 space-x-2 md:mt-0 flex-1 sm:text-right">
+              <h3
+                class="inline-block md:hidden lg:inline-block ycdcPlus:mr-0 text-[1.17em]"
+              >
+                Make something people want.
+              </h3>
+              <a
+                href="/apply"
+                class="apply-btn ycdc-retro-btn ycdc-retro-btn-gold mt-[-10px] ml-[13px]"
+                >Apply</a
+              >
+            </div>
+          </div>
+          <div
+            class="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between"
+          >
+            <div class="flex space-x-6 md:order-2">
+              <a href="https://twitter.com/ycombinator" target="_blank" class=""
+                ><span class="sr-only">Twitter</span
+                ><svg
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  width="1.25em"
+                  height="1.25em"
+                  class="h-6 w-6"
+                  aria-hidden="true"
+                >
+                  <title>Twitter</title>
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  ></path></svg></a
+              ><a
+                href="https://www.facebook.com/YCombinator/"
+                target="_blank"
+                class=""
+                ><span class="sr-only">Facebook</span
+                ><svg
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  width="1.25em"
+                  height="1.25em"
+                  class="h-6 w-6"
+                  aria-hidden="true"
+                >
+                  <title>Facebook</title>
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd"
+                  ></path></svg></a
+              ><a
+                href="https://www.instagram.com/ycombinator"
+                target="_blank"
+                class=""
+                ><span class="sr-only">Instagram</span
+                ><svg
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  width="1.25em"
+                  height="1.25em"
+                  class="h-6 w-6"
+                  aria-hidden="true"
+                >
+                  <title>Instagram</title>
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  ></path></svg></a
+              ><a
+                href="https://www.linkedin.com/school/y-combinator/"
+                target="_blank"
+                class=""
+                ><span class="sr-only">LinkedIn</span
+                ><svg
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  width="1.25em"
+                  height="1.25em"
+                  class="h-6 w-6"
+                  aria-hidden="true"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  ></path></svg></a
+              ><a
+                href="https://www.youtube.com/c/ycombinator"
+                target="_blank"
+                class=""
+                ><span class="sr-only">Youtube</span
+                ><svg
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  width="1.25em"
+                  height="1.25em"
+                  class="h-6 w-6"
+                  aria-hidden="true"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path></svg
+              ></a>
+            </div>
+            <p class="mt-8 text-base md:mt-0 md:order-1">
+              © 2022 Y Combinator All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      type="application/json"
+      class="js-react-on-rails-component"
+      data-component-name="ApplyPage"
+      data-dom-id="ApplyPage-react-component-03821a3f-eafe-4b30-b932-ab89bf189e3d"
+    >
+      {
+        "appBatch": "Summer 2022",
+        "pastDeadline": true,
+        "batchMonthSpan": "June–August 2022",
+        "batchStartMonth": "June",
+        "appDueDate": "March 24",
+        "appDueDateTime": " 8 pm PT on March 24",
+        "invitesSentDate": "May 19",
+        "interviewsApproximation": "April, May, or early June"
+      }
+    </script>
+  </body>
+</html>
